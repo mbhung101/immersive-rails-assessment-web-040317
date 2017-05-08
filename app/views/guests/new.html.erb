@@ -1,0 +1,19 @@
+<h1> New Form <h1>
+
+<%=form_for(@guest) do |f|%>
+     <%=f.label :name%>
+     <%=f.text_field :name%>
+     <%=f.label :occupation%>
+     <%=f.text_field :occupation%>
+     <%=f.submit%>
+ <%end%>
+
+<%=form_for(@appearance) do |f|%>
+     <%=f.label :guest_id%>
+     <%=f.text_field :guest_id%>
+     <%=f.label :episode_id%>
+     <%=f.text_field :episode_id%>
+     <%=f.label :star_rating%>
+     <%=f.text_field :star_rating%>
+     <%=f.submit%>
+ <%end%>
